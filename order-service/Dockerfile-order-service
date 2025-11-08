@@ -5,6 +5,6 @@ WORKDIR /app/java
 COPY . .
 
 
-RUN  ./gradlew assemble
+RUN  mvn package
 
 CMD [ "java -jar" "/app/java/app.jar"]
