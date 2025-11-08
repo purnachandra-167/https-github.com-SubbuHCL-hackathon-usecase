@@ -1,4 +1,4 @@
-FROM pull node:20.19.5-trixie
+FROM node:20.19.5-trixie
 
 WORKDIR /app
 
