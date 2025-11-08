@@ -4,7 +4,7 @@ USER root
 WORKDIR /app/java
 
 COPY . .
-COPY /SubbuHCL-hackathon-usecase/order-service/ .
+COPY SubbuHCL-hackathon-usecase/order-service/ .
 RUN ls -ltr
 
 
