@@ -1,9 +1,10 @@
 FROM amazoncorretto:latest
-
+USER root
 WORKDIR /app/java
 
 COPY . .
 
-RUN ./gradlew assemble
+RUN chmod +x gradlew
+RUN  ./gradlew assemble
 
 CMD [ "java -jar" "/app/java/app.jar"]
